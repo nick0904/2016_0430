@@ -1,25 +1,516 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_0160430" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="KBz-Or-TBT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome MyApp" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFI-9q-Jtz">
+                                <rect key="frame" x="69" y="468" width="237" height="98"/>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="41"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clh-aL-iLy">
+                                <rect key="frame" x="109" y="468" width="157" height="93"/>
+                                <connections>
+                                    <segue destination="0ZS-iz-nJp" kind="presentation" id="HPw-NF-sZ0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="141.5" y="334.5"/>
+        </scene>
+        <!--首頁-->
+        <scene sceneID="KaG-0u-rcX">
+            <objects>
+                <viewController id="6eK-dm-Wkv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mxS-wn-Bcw"/>
+                        <viewControllerLayoutGuide type="bottom" id="1La-1Q-eeO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ymp-Lf-Kpg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="首頁" id="krp-hF-axL">
+                        <barButtonItem key="rightBarButtonItem" image="favorites" id="fKN-37-pOS">
+                            <connections>
+                                <segue destination="fRh-4i-Xti" kind="show" id="bEN-Ze-Nhl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MyI-EV-oqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1697.5" y="334.5"/>
+        </scene>
+        <!--星空下的故事-->
+        <scene sceneID="y6k-sh-nGM">
+            <objects>
+                <viewController id="fRh-4i-Xti" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xlj-sg-ZZg"/>
+                        <viewControllerLayoutGuide type="bottom" id="Frl-IY-ijM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Srr-Zq-mbP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="test_1" translatesAutoresizingMaskIntoConstraints="NO" id="UG2-24-Jt3">
+                                <rect key="frame" x="0.0" y="232" width="375" height="236"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNW-oQ-2oZ">
+                                <rect key="frame" x="10" y="493" width="354" height="159"/>
+                                <string key="text">       宇宙星球裡住著許多家庭，其中有一個家庭的月亮媽媽，她有個女兒名字叫小星星，小星星很活潑、喜歡到處玩耍，但卻不懂得關心他人，小星星一天一天地長
+大。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="⭐️💫⭐️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dn4-DF-khR">
+                                <rect key="frame" x="102" y="98" width="171" height="108"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="星空下的故事" id="lft-ik-MWv"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FOa-0P-14Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2166.5" y="333.5"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Ppd-Pt-ebn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eag-EI-V9C" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="SDN-Pu-UVR"/>
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jtS-6d-Xel">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6eK-dm-Wkv" kind="relationship" relationship="rootViewController" id="12Z-FH-Efb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8t5-is-zfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1210.5" y="334.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="pnS-Pl-H2i">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="0ZS-iz-nJp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="IOS-nt-WuO">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="eag-EI-V9C" kind="relationship" relationship="viewControllers" id="P2H-fN-DW8"/>
+                        <segue destination="WZq-pw-FvK" kind="relationship" relationship="viewControllers" id="U1L-g6-GyS"/>
+                        <segue destination="mig-o4-W83" kind="relationship" relationship="viewControllers" id="WAc-on-g0T"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KFd-IO-F5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="695" y="334"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="7P8-GT-Stb">
+            <objects>
+                <tableViewController id="vRT-ZZ-LTx" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="s23-lI-iR7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="aI5-eb-VFx">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="188" id="sdw-os-yB7">
+                                        <rect key="frame" x="0.0" y="64" width="375" height="188"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sdw-os-yB7" id="GAo-iT-Kal">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="187"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="ZUh-OQ-71h">
+                                                    <rect key="frame" x="0.0" y="0.0" width="376" height="187"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="xti-E7-adE" kind="show" id="qLv-yn-mfE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="217" id="2YU-ox-IvW">
+                                        <rect key="frame" x="0.0" y="252" width="375" height="217"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2YU-ox-IvW" id="EOo-GP-dF1">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="216"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="DUG-Op-qOq">
+                                                    <rect key="frame" x="-17" y="14" width="393" height="187"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Jy5-gl-gFt" kind="show" id="1Hz-RK-ydA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="137" id="UUV-tj-A1Z">
+                                        <rect key="frame" x="0.0" y="469" width="375" height="137"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UUV-tj-A1Z" id="H3R-c1-tp6">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="136"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="9bh-h1-B05">
+                                                    <rect key="frame" x="-25" y="0.0" width="393" height="187"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="npo-rn-8GW" kind="show" trigger="accessoryAction" id="qCA-On-qGD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="vRT-ZZ-LTx" id="gdL-lW-7ct"/>
+                            <outlet property="delegate" destination="vRT-ZZ-LTx" id="a03-j4-tzM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="4xj-t2-BZL"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L6Q-Wg-Yjx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99.5" y="1869.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="biX-ag-dS2">
+            <objects>
+                <viewController id="xti-E7-adE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pcw-jn-deO"/>
+                        <viewControllerLayoutGuide type="bottom" id="gOR-C0-neO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IrL-Fy-fxF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4_1" translatesAutoresizingMaskIntoConstraints="NO" id="1fO-Zd-w2z">
+                                <rect key="frame" x="20" y="109" width="335" height="232"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ULv-qe-YOr">
+                                <rect key="frame" x="23" y="366" width="328" height="212"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">       天帝宙斯愛上了嬌美的少女歐羅芭，他想和歐羅芭相會，可是又害怕善妒的天后赫拉知道後，會大發雷霆，於是他把自己變成一頭大公牛，頭上長著一對透明的牛角，將歐羅芭背在背上，渡過愛琴海。          到了一座島上後，再變回人形，和歐羅芭過著快樂的日子。</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yN3-Ua-LSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="632.5" y="1611.5"/>
+        </scene>
+        <!--星星傳說-->
+        <scene sceneID="HOL-V6-jXc">
+            <objects>
+                <viewController id="WZq-pw-FvK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1F9-3T-Wby"/>
+                        <viewControllerLayoutGuide type="bottom" id="G27-CC-fVR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ojb-GD-vlw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="12" translatesAutoresizingMaskIntoConstraints="NO" id="0mT-lD-7HP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zf-ql-zBb">
+                                <rect key="frame" x="9" y="130" width="356" height="336"/>
+                                <string key="text">       西方星座的概念源自於遠古時美索不達米亞平原的巴比倫人；而星座的命名則取自於古希臘神話。           但星座神話所提及的僅指北半球星空所能看到的。至於南天星空星座的命名，則是由十八世紀赫歇爾父子透過觀測，以南方動物和科學儀器加以命名，如顯微鏡座、望遠鏡座、南十字座等，這才完成了現在全天域八十八個星座的命名 。</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6q6-zf-8yQ">
+                                <rect key="frame" x="139" y="522" width="96" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="12星座">
+                                    <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DDN-41-5rS" kind="presentation" id="UMz-xv-8CV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="星星傳說" id="lhz-SA-jBq"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdg-03-mqJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1281.5" y="1111.5"/>
+        </scene>
+        <!--水平座-->
+        <scene sceneID="X8V-VE-Fau">
+            <objects>
+                <viewController id="Wzl-6k-L8P" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9JX-Hd-7fC"/>
+                        <viewControllerLayoutGuide type="bottom" id="NzS-h7-hUz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c7p-M1-KRC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="n5J-sQ-g9J">
+                                <rect key="frame" x="0.0" y="20" width="375" height="316"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sfl-b8-lw5">
+                                <rect key="frame" x="26" y="410" width="335" height="169"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">       寶瓶座是美少年科裡密尼斯化身而成的。         科裡密尼斯是特洛伊的王子。諸神在奧林匹斯山舉行宴會的斟酒工作，本來一直由女孩哈蓓負責。        
+        這一次哈蓓有事不能來，於是天帝宙斯就派使者把科裡密尼斯抓來。由於科裡密尼斯長得非常俊美，宙斯很喜歡，所以就把他留在天上，命他為斟酒的侍役。而他提著酒瓶斟酒的模樣正是寶瓶座形狀。
+</string>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="水平座" id="MnY-Gj-LmK"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vyK-3r-tW3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2372.5" y="1111.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Ql4-yb-FY4">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="DDN-41-5rS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="TNa-nA-5Ez">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Wzl-6k-L8P" kind="relationship" relationship="viewControllers" id="fC5-7O-XP0"/>
+                        <segue destination="37F-YB-H87" kind="relationship" relationship="viewControllers" id="1Bl-Iu-Bk0"/>
+                        <segue destination="na0-94-y2t" kind="relationship" relationship="viewControllers" id="GQ1-bq-BXO"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8hY-vH-7Cw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1890.5" y="1110.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lxr-2Z-Szm">
+            <objects>
+                <viewController id="npo-rn-8GW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4mM-H1-jcE"/>
+                        <viewControllerLayoutGuide type="bottom" id="eZp-ks-wlw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Il-qh-pyF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2Gl-6k-YST">
+                                <rect key="frame" x="15" y="387" width="328" height="212"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">　     勇士海克力斯，奉命履行十二件苦差事。因為他和天后赫拉向有宿仇，所以當海克力斯有一回正在和怪物九頭蛇博鬥時，天后赫拉又差遣巨大的魔蟹去為怪物助陣。          大魔蟹一上來就狠狠鉗住海克力斯的腳，海克力斯非常生氣，於是舉起另外一隻腳用力把魔蟹踩死了。赫拉沒有法子，只得把魔蟹移到天上去，化為巨蟹座。</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6_1" translatesAutoresizingMaskIntoConstraints="NO" id="HK5-es-Giy">
+                                <rect key="frame" x="15" y="113" width="335" height="232"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cng-aV-ke4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99.5" y="2637.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bUz-k8-dBn">
+            <objects>
+                <viewController id="Jy5-gl-gFt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5wT-aK-TX4"/>
+                        <viewControllerLayoutGuide type="bottom" id="yDo-Fm-bR3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pwf-WL-5YC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RnZ-nU-SNu">
+                                <rect key="frame" x="25" y="379" width="328" height="212"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">       卡斯得爾和波拉克斯，是天帝宙斯和斯巴達公主所生的孿生兄弟，兩人感情非常好。         卡斯得爾精通劍術，而波拉克斯則擅長馬術，他們一向併肩作戰，合作無間，從來沒有失敗過。可是卡斯特爾在一次戰役中不幸喪生，波拉克斯哀痛不已，他立誓為卡斯特爾報仇。          後來雖然達成願望，可是兄弟倆再也無法像以前一樣地生活在一起了。天帝宙斯很同情他們，於是把他們移到天上，使兩個人生活在一起，成為雙子星座。</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5_1" translatesAutoresizingMaskIntoConstraints="NO" id="dSF-OP-Jza">
+                                <rect key="frame" x="25" y="105" width="335" height="232"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8zP-1P-fss" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="626" y="2357"/>
+        </scene>
+        <!--雙魚座-->
+        <scene sceneID="Gh0-Dd-8rR">
+            <objects>
+                <viewController id="37F-YB-H87" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aET-cM-Etx"/>
+                        <viewControllerLayoutGuide type="bottom" id="eVH-Mp-9n3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j9f-aO-KfZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="4H2-wr-2A8">
+                                <rect key="frame" x="0.0" y="20" width="375" height="316"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="G6B-0D-1yr">
+                                <rect key="frame" x="26" y="410" width="335" height="169"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">       女神維納斯和她的兒子邱比特，有一次在幼發拉底河的河邊散步，突然有一隻眼睛噴火的百頭怪物出來攻擊他們。         維納斯和邱比特慌忙跳進河裡，變成兩條魚，維納斯怕被河水沖走，於是用絲帶把兩條尾巴拴在一起，而成為一端代表軀體，一端代表精神的雙魚座。</string>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="雙魚座" id="8bS-IF-2Uj"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xaH-Ar-L9L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1303.5" y="1875.5"/>
+        </scene>
+        <!--白羊座-->
+        <scene sceneID="LNA-T8-jPi">
+            <objects>
+                <viewController id="na0-94-y2t" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zmv-6c-Yeo"/>
+                        <viewControllerLayoutGuide type="bottom" id="sjM-L6-Lbg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JAr-qG-4KQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="Adn-1C-2dz">
+                                <rect key="frame" x="0.0" y="20" width="375" height="316"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="csN-i4-SKb">
+                                <rect key="frame" x="26" y="410" width="335" height="169"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">       在希臘神話裡，白羊座指的是一隻有神奇能力的羊，他幫助一對苦難的兄妹脫離險境。可憐的富利科索斯和克拉兄妹，是後母依諾的眼中釘，他不但常虐待這對兄妹，而且計畫要殺死他們。        這對兄妹的親生母親涅菲麗知道以後，著急地祈求天帝宙斯解救兄妹倆。因為涅菲麗的虔誠祈求，於是宙斯將一頭全身金毛，長著雙翅的羊送給這對兄妹，好讓兄妹乘著羊飛上天空，脫離依諾的控制。        可惜，當他們飛到中途，妹妹克拉卻不慎落入海裡溺死了。於是這頭金羊一邊安慰傷心欲絕的哥哥，一面堅強地朝目的繼續前進。</string>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="白羊座" id="EQf-46-MtA"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TD1-3z-Vgu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1730.5" y="1869.5"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Ekq-J5-6d5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mig-o4-W83" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="layers" id="pcL-zd-T6A"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Om-9D-pVp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vRT-ZZ-LTx" kind="relationship" relationship="rootViewController" id="nLa-SQ-2e5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qnq-Kh-Yoj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99.5" y="1108.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1" width="279" height="380"/>
+        <image name="12" width="505" height="321"/>
+        <image name="2" width="328" height="374"/>
+        <image name="3" width="239" height="370"/>
+        <image name="4" width="576" height="267"/>
+        <image name="4_1" width="259" height="194"/>
+        <image name="5" width="580" height="279"/>
+        <image name="5_1" width="259" height="194"/>
+        <image name="6" width="561" height="219"/>
+        <image name="6_1" width="259" height="194"/>
+        <image name="favorites" width="32" height="32"/>
+        <image name="launch" width="297" height="426"/>
+        <image name="layers" width="32" height="32"/>
+        <image name="test_1" width="1920" height="1020"/>
+    </resources>
 </document>

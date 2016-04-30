@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D11EBCE41CD4AA620032E5B1 /* TestMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D11EBCE31CD4AA620032E5B1 /* TestMusic.mp3 */; };
 		D1CA413D1CD459C0008EB7AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CA413C1CD459C0008EB7AB /* AppDelegate.swift */; };
 		D1CA413F1CD459C0008EB7AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CA413E1CD459C0008EB7AB /* ViewController.swift */; };
 		D1CA41421CD459C0008EB7AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1CA41401CD459C0008EB7AB /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D11EBCE31CD4AA620032E5B1 /* TestMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TestMusic.mp3; sourceTree = "<group>"; };
 		D1CA41391CD459C0008EB7AB /* 20160430.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 20160430.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1CA413C1CD459C0008EB7AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1CA413E1CD459C0008EB7AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,10 +56,11 @@
 		D1CA413B1CD459C0008EB7AB /* 20160430 */ = {
 			isa = PBXGroup;
 			children = (
+				D11EBCE31CD4AA620032E5B1 /* TestMusic.mp3 */,
 				D1CA413C1CD459C0008EB7AB /* AppDelegate.swift */,
 				D1CA413E1CD459C0008EB7AB /* ViewController.swift */,
-				D1CA41401CD459C0008EB7AB /* Main.storyboard */,
 				D1CA41431CD459C0008EB7AB /* Assets.xcassets */,
+				D1CA41401CD459C0008EB7AB /* Main.storyboard */,
 				D1CA41451CD459C0008EB7AB /* LaunchScreen.storyboard */,
 				D1CA41481CD459C0008EB7AB /* Info.plist */,
 			);
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					D1CA41381CD459C0008EB7AB = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 58U74FE25X;
 					};
 				};
 			};
@@ -122,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D11EBCE41CD4AA620032E5B1 /* TestMusic.mp3 in Resources */,
 				D1CA41471CD459C0008EB7AB /* LaunchScreen.storyboard in Resources */,
 				D1CA41441CD459C0008EB7AB /* Assets.xcassets in Resources */,
 				D1CA41421CD459C0008EB7AB /* Main.storyboard in Resources */,
@@ -251,6 +256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = 20160430/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.-0160430";
@@ -262,6 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = 20160430/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.-0160430";
@@ -288,6 +295,7 @@
 				D1CA414D1CD459C0008EB7AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

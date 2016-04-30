@@ -7,15 +7,22 @@
 //
 
 import UIKit
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var player:AVAudioPlayer!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let urlPath = NSBundle.mainBundle().pathForResource("TestMusic", ofType: "mp3")
+        self.player =  try! AVAudioPlayer(contentsOfURL: NSURL(string: urlPath!)!)
+        self.player.play()
+        self.player.numberOfLoops = -1
+        
         return true
     }
 
@@ -41,6 +48,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    
 }
 
